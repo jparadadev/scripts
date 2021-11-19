@@ -15,5 +15,7 @@ def starve(destiny_mac: str):
 
 
 if __name__ == '__main__':
+    print('Starting DHCP starvation attack...')
     starve()
+    print('Attack finished.')
 

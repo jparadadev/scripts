@@ -20,7 +20,6 @@ def starve(params):
     ips_for_feeding = IPv4Network(network)
 
     for ip_dir in ips_for_feeding:
-        break
         src_mac = RandMAC()
 
         ether = Ether(src=src_mac, dst='ff:ff:ff:ff:ff:ff')

@@ -6,6 +6,7 @@ from ipaddress import IPv4Network
 import argparse
 
 TIMEOUT = 0.3
+conf.verb = 0
 
 def knock_knock_everywhere(params):
     port_range = params['port-range'] if params.get('port-range') is not None else '1:9999'

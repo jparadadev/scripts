@@ -22,12 +22,14 @@ def knock_knock_everywhere(params):
         reply = sr1(packet, timeout=TIMEOUT)
         if reply is None:
             continue
+        print('Port {} answer us ;)'.format(port))
         
         for port2 in range(first_port, last_port):
             reply = sr1(packet, timeout=TIMEOUT)
             if reply is None:
                 continue
             print('Port knocking is broken }:)')
+            print('Ports are {} and {}'.format(port, port2))
 
 
 if __name__ == '__main__':

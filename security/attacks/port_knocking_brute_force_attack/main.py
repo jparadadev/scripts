@@ -12,8 +12,8 @@ def knock_knock_everywhere(params):
     ip =         params['ip']         if params.get('ip')         is not None else '192.168.1.1'
     
     port_range = port_range.split(':')
-    first_port = port_range[0]
-    last_port = port_range[1]
+    first_port = int(port_range[0])
+    last_port = int(port_range[1])
 
     print('Starting port knocking attack }:)')
     
